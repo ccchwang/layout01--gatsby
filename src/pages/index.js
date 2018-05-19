@@ -1,13 +1,24 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Grid, Row, Col } from 'react-bootstrap'
+import { Header } from '../components';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi peoplsde</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  <Grid style={{width: '100%'}}>
+
+    <Header />
+
+    {/* <Menu />
+
+    <Header />
+
+    <About />
+
+    <Work />
+
+    <Contact />
+
+    <Footer /> */}
+  </Grid>
 )
 
 export default IndexPage
