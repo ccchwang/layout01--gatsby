@@ -1,11 +1,11 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
-import { Header } from '../components';
+import { Header, About } from '../components';
 
 const IndexPage = () => (
   <Grid style={{width: '100%'}}>
 
-    <Header />
+    <About />
 
     {/* <Menu />
 
