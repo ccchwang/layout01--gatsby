@@ -17,13 +17,13 @@ export default function () {
         <div id="menu-btn" className="button">
           <img src="/bars.png" id="menu-icon" />
         </div>
-        <div onClick={() => scrollToElement('about')} id="about-btn" className="button">
+        <div onClick={() => scrollToElement('about')}>
           about
         </div>
-        <div onClick={() => scrollToElement('work')} id="work-btn" className="button">
+        <div onClick={() => scrollToElement('work')}>
           work
         </div>
-        <div onClick={() => scrollToElement('contact')} id="contact-btn" className="button">
+        <div onClick={() => scrollToElement('contact')}>
           contact
         </div>
       </Menu>

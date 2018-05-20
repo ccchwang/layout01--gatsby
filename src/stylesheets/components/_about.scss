@@ -33,7 +33,8 @@
 }
 
 
-#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before,
+.menu-item::before,
+.contact-tool::before,
 .resume-link::before {
   content: '';
   position: absolute;
@@ -43,7 +44,8 @@
   left: 0;
 }
 
-#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
+.menu-item::before,
+.contact-tool::before {
   z-index: -1;
   background-color: $highlight-color;
   transition: 0.3s;
@@ -60,18 +62,20 @@
   cursor: pointer
 }
 
-#about-btn:hover, #work-btn:hover, #contact-btn:hover, .contact-tool:hover {
+.menu-item:hover,
+.contact-tool:hover {
   color: $secondary-color !important;
   transition: 0.3s
 }
 
-#about-btn, #work-btn, #contact-btn, .contact-tool {
+.menu-item,
+.contact-tool {
   transition: color 0.3s
 }
 
-#about-btn:focus::before, #about-btn:hover::before,
-#work-btn:focus::before, #work-btn:hover::before,
-#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before,
+.menu-item:focus::before,
+.menu-item:hover::before,
+.contact-tool:hover::before,
 .resume-link:hover::before {
   width: 100%;
 }
