@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import '../stylesheets/app.scss'
+import '../javascript/animation.js'
 
 const Layout = ({ children, data }) => (
   <div>
