@@ -9,7 +9,6 @@
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
-    "normalize.css": "^6.0.0",
     "react-bootstrap": "^0.30.10",
     "react-helmet": "^5.2.0"
   },
