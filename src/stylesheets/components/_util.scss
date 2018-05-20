@@ -1,0 +1,16 @@
+.hide-section {
+  display: none;
+}
+.small-header {
+  height: 62vh;
+  transition-delay: 0.9s
+}
+.expanded-content {
+  height: 100%;
+}
+.fixed-btn {
+  position: fixed !important;
+}
+.scale-up {
+  transform: scale(1.3);
+}

@@ -1,0 +1,345 @@
+//*** BIGGER PHONES
+@media screen and (min-width: 321px) {
+
+  svg.intro {
+    height: 350px;
+    .text {
+      font-size: 6.6em;
+    }
+  }
+  #svg-text-2 {
+    transform: translateY(207px);
+    -webkit-transform: translateY(207px);
+  }
+  #svg-text-3 {
+    transform: translateY(271px);
+    -webkit-transform: translateY(271px);
+  }
+  .svg-text-4 {
+    transform: translateY(304px);
+    -webkit-transform: translateY(304px);
+  }
+  #small-text {
+    font-size: 1.46em;
+  }
+
+  .title-text {
+    font-size: 3em;
+    padding: 15px 20px 20px
+  }
+
+  .menu-item {
+    font-size: 1.4em;
+    padding: 7px 13px 9px
+  }
+
+
+  //about - 321
+
+  .about-intro {
+    font-size: 23px;
+  }
+  .intro-emphasis {
+    font-size: 21px;
+  }
+  .about-text {
+    p, li {
+      font-size: 16px
+    }
+  }
+  .about-heading-text {
+    font-size: 33px
+  }
+  .mini-heading {
+    font-size: 18px
+  }
+  .video-title {
+    font-size: 22px
+  }
+  .video-date {
+    font-size: 14px
+  }
+
+  //work - header 321
+  .header-title {
+    font-size: 4em;
+  }
+
+  .header-subtitle {
+    font-size: 20px;
+  }
+}
+
+
+//IPHONE 6 PLUS
+@media screen and (min-width: 414px) {
+  //about - 414
+  .content-padding {
+    padding: 0px 50px;
+  }
+
+  //work- 414
+  .header-text-wrapper {
+    padding-right: 60px;
+    padding-left: 60px
+  }
+}
+
+//*** BIGGER THAN PHONE PORTRAIT
+@media screen and (min-width: 415px) {
+
+  //HEADER
+  #header {
+    height: 100vh;
+  }
+
+  #header-main {
+    top: 12.5vh;
+  }
+
+  //work - 415
+  .header-title {
+    font-size: 4.5em;
+  }
+
+  .header-subtitle {
+    font-size: 21px;
+  }
+}
+
+//*** HALF DESKTOP
+@media screen and (min-width: 668px) {
+
+  //HEADER
+  #svg-text-2 {
+    transform: translateY(225px);
+    -webkit-transform: translateY(225px);
+  }
+  #svg-text-3 {
+    transform: translateY(301px);
+    -webkit-transform: translateY(301px);
+  }
+  .svg-text-4 {
+    transform: translateY(342px);
+    -webkit-transform: translateY(342px);
+  }
+  #small-text {
+    font-size: 1.81em;
+  }
+
+  svg.intro {
+
+      .text {
+        font-size: 8em;
+      }
+  }
+
+  //about - 668
+
+  .content-padding {
+    padding: 0px 100px;
+  }
+
+  .about-intro {
+    font-size: 28px;
+  }
+  .intro-emphasis {
+    font-size: 25px;
+  }
+  .about-text {
+    p, li {
+      font-size: 17px;
+    }
+    .grouped {
+      width: 45.5%;
+      margin-right: 20px
+    }
+  }
+  .about-heading-text {
+    font-size: 35px
+  }
+  .mini-heading {
+    font-size: 20px
+  }
+  .video-title {
+    font-size: 25px
+  }
+  .video-date {
+    font-size: 15px
+  }
+
+  .features-blurb {
+    width: 70%;
+    max-width: 440px;
+  }
+
+  //contact - 668
+  .contact-toolbar {
+    .contact-tool {
+      font-size: 18px;
+    }
+  }
+}
+
+//*** FULL SIZE DESKTOP
+@media screen and (min-width: 992px) {
+
+  // HEADER
+  #header-main {
+    height: 85vh;
+    top: 7.5vh;
+  }
+
+  #header-vid {
+    height: 100%
+  }
+
+  #header-border {
+    padding-left: 20px;
+    border-left: 5px solid $highlight-color;
+    border-width: 5px;
+  }
+
+
+  svg.intro {
+    top: 25%;
+    left: -145px;
+    height: 380px;
+  }
+
+  //ABOUT
+  #about-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+  }
+
+  .about-content, .work-content {
+    position: relative;
+    z-index: 100;
+    left: 33.3%;
+  }
+
+
+  //WORK
+  #work-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+  }
+
+  .fixed-header {
+    position: fixed !important;
+  }
+  .work-item-section {
+    padding-right: 172px;
+    padding-left: 172px
+  }
+
+  .work-item-section.long {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+
+
+
+
+
+///////
+
+#work-header {
+  -webkit-transition: width 0.6s $ease-expand-page;
+  -moz-transition: width 0.6s $ease-expand-page;
+  -ms-transition: width 0.6s $ease-expand-page;
+  -o-transition: width 0.6s $ease-expand-page;
+  transition: width 0.6s $ease-expand-page;
+}
+
+.work-content {
+  transition: 0.6s $ease-expand-page;
+}
+
+.minimized {
+  width: 25%;
+}
+
+.expanded-column {
+  width: 75%;
+  left: 25%
+}
+
+.add-border {
+  border-right: 1px solid #dcdcdc
+}
+}
+
+@media screen and (min-width: 1700px) {
+  //HEADER
+  #svg-text-2 {
+    transform: translateY(240px);
+    -webkit-transform: translateY(240px);
+  }
+  #svg-text-3 {
+    transform: translateY(320px);
+    -webkit-transform: translateY(320px);
+  }
+  .svg-text-4 {
+    transform: translateY(361px);
+    -webkit-transform: translateY(361px);
+  }
+  #small-text {
+    font-size: 2em;
+  }
+
+  svg.intro {
+      .text {
+        font-size: 9em;
+      }
+  }
+}
+
+//***FOR SHOWING 'SEE MORE' BTN ON PHONES/TABLETS
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 991px)
+  {
+    .work-item.closed.small-screen {
+      .border-wrapper::before {
+        left: 32px;
+        transition: 0.5s;
+        transition-delay: 0.9s;
+        transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      .border-top::before,
+      .border-bottom::before {
+        width: 100%;
+        transition: width 0.2s $ease-border;
+        -webkit-transition: width 0.2s $ease-border;
+      }
+
+      .border-right::before,
+      .border-left::before {
+        height: 100%;
+        transition: height 0.2s $ease-border;
+        -webkit-transition: height 0.2s $ease-border;
+      }
+
+      .border-bottom::before {
+        transition-delay: 0.4s;
+      }
+      .border-right::before {
+        transition-delay: 0.2s;
+      }
+      .border-left::before {
+        transition-delay: 0.6s;
+      }
+
+      .subtitle-wrapper {
+        margin-top: -15px;
+        opacity: 0;
+        transition: 0.2s;
+      }
+    }
+}

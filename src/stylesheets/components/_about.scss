@@ -1,0 +1,160 @@
+#about-main {
+  z-index: 20
+}
+
+#about-header {
+  background-color: $highlight-color;
+}
+
+.about-content, .contact-content {
+  font-family: $sanserif-font;
+  text-align: left;
+  right: 0;
+  background-color: white;
+}
+
+.contact-content {
+  border-top: 1px solid gainsboro;
+}
+
+.about-content {
+  border-bottom: 1px solid $secondary-color;
+  height: auto;
+}
+
+.content-padding {
+  padding: 0px 36px;
+}
+
+.about-intro {
+  font-size: 22px;
+  font-style: italic;
+  padding-top: 15%;
+}
+
+
+#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before,
+.resume-link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
+  z-index: -1;
+  background-color: $highlight-color;
+  transition: 0.3s;
+}
+
+.resume-link::before {
+  z-index: 0;
+  border-bottom: 3px solid #333;
+  transition: 0.2s;
+}
+
+.resume-link {
+  position: relative;
+  cursor: pointer
+}
+
+#about-btn:hover, #work-btn:hover, #contact-btn:hover, .contact-tool:hover {
+  color: $secondary-color !important;
+  transition: 0.3s
+}
+
+#about-btn, #work-btn, #contact-btn, .contact-tool {
+  transition: color 0.3s
+}
+
+#about-btn:focus::before, #about-btn:hover::before,
+#work-btn:focus::before, #work-btn:hover::before,
+#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before,
+.resume-link:hover::before {
+  width: 100%;
+}
+
+// about - text
+
+
+.intro-emphasis {
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.about-heading-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: $sanserif-font;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  .divider {
+    width: 35px;
+    border-bottom: 2px solid #424242;
+    display: inline-block;
+  }
+  .divider.light {
+    border-color: white
+  }
+}
+
+
+
+.about-text {
+  ul {
+    list-style-type: square;
+    padding-left: 21px;
+    margin-top: 5px;
+  }
+  p, li {
+    font-family: $sanserif-font;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  p {
+    line-height: 1.6;
+  }
+  li {
+    line-height: 25px;
+  }
+  .grouped {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
+
+.mini-heading {
+  font-style: italic;
+  font-size: 17px;
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.video-date {
+  font-size: 13px;
+  font-family: 'poppins';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.video-title {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
+  margin: 8px 0;
+}

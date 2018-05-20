@@ -1,0 +1,19 @@
+#menu {
+  position: fixed;
+  z-index: 3000;
+  left: 25px;
+  top: 25px
+}
+
+#menu-btn {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  font-size: 1.21em;
+  padding: 6px 11px 8px
+}

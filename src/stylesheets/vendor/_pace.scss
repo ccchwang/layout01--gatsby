@@ -1,0 +1,86 @@
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  background: linear-gradient(45deg, #F7FB8D, #82d08b);
+  z-index: 3500;
+}
+
+.pace::after, .pace::before {
+  text-align: center;
+  width: 266px;
+  font-family: 'poppins';
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border: 3px solid #f7fb8e;
+  padding: 28px 32px 25px 34px;
+  position: absolute;
+  top: 43%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pace::before {
+  content: 'LOADING...';
+}
+
+.pace::after {
+  content: 'WELCOME';
+  opacity: 0
+}
+
+@-webkit-keyframes disappearTxt {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappearTxt {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes appearTxt {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appearTxt {
+  100% {
+    opacity: 1;
+  }
+}
+
+.pace-inactive {
+  top: -100vh;
+  transition: top 0.8s $ease-expand-page 1.15s
+}
+.pace.pace-inactive::before {
+  animation: disappearTxt 0.35s forwards 0.20s;
+  -webkit-animation: disappearTxt 0.35s forwards 0.20s;
+}
+
+.pace.pace-inactive::after {
+  animation: appearTxt 0.6s forwards 0.55s;
+  -webkit-animation: appearTxt 0.6s forwards 0.55s;
+}
+
+.pace .pace-progress {
+  background: #f7fb8e;
+  position: absolute;
+  z-index: 4000;
+  top: 0;
+  right: 100%;
+  width: 100vw;
+  height: 15px;
+}
