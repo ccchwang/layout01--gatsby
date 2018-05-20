@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import '../stylesheets/app.scss'
 import 'normalize.css';
+import '../stylesheets/app.scss'
 
 const Layout = ({ children, data }) => (
   <div>

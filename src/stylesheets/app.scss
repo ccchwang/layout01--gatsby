@@ -1,3 +1,5 @@
+@import "./bootstrap.min.css";
+
 $main-color: #b5b4b4;
 $highlight-color: #f7fb8e;
 $secondary-color: #424242;
@@ -161,7 +163,7 @@ $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 body {
   margin: 0;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 #app {
@@ -261,7 +263,7 @@ body.pace-done {
   position: relative;
   overflow: hidden;
   z-index: 2;
-  background-image: url('/public/images/palms.jpg');
+  background-image: url('/palms.jpg');
   background-attachment: fixed;
   padding: 0;
 }
@@ -285,7 +287,7 @@ body.pace-done {
 }
 
 #header-img {
-  background-image: url('/public/images/header-img-1.jpg');
+  background-image: url('/header-img-1.jpg');
   background-size: cover;
   background-color: white;
   height: 100%;
