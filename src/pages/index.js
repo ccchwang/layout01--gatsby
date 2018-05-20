@@ -1,17 +1,10 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
-import { Header, About, Work } from '../components';
+import { Menu, Header, About, Work, Contact, Footer } from '../components';
 
 const IndexPage = () => (
   <Grid style={{width: '100%'}}>
-
-    <Header />
-
-    <About />
-
-    <Work />
-
-    {/* <Menu />
+    <Menu />
 
     <Header />
 
@@ -21,7 +14,7 @@ const IndexPage = () => (
 
     <Contact />
 
-    <Footer /> */}
+    <Footer />
   </Grid>
 )
 
